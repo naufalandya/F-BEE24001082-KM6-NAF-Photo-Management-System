@@ -1,0 +1,32 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Users {
+  id String @id
+  name String?  @default("Please Add Your Name")
+  email String @unique 
+  username String? @unique 
+  password String 
+  address String?  @default("Please Add Your Address")
+  occupation String? @default("Please Add Your Occupation")
+  avatar_url String? @default("Please Add Your Profile Picture")
+  created_at String
+  role String @default("user")
+}
+
+model Posts {
+  id Int @id @default(autoincrement())
+  title String
+  description String
+  link_image String @unique
+}
