@@ -25,7 +25,7 @@
 
 #### Get Meta Data
 
-```http
+```bash
   GET /api/v1/image-kit/meta-data-image
 ```
 
@@ -33,9 +33,19 @@
 | :-------  |:------- | :------------------------- |
 | `none` |`json` | Retrieve all meta data of saved images |
 
+#### Create Meta Data
+
+```POST
+  GET /api/v1/image-kit/meta-data-image
+```
+
+| Parameter | Type     | Description                |
+| :-------  |:------- | :------------------------- |
+| `none` |`json` | Save meta data from form to D1 |
+
 #### Delete Meta Data
 
-```http
+```bash
   DELETE /api/v1/image-kit/meta-data-image/:id
 ```
 
@@ -46,9 +56,9 @@
 
 #### Link : https://media-handler-railway-production.up.railway.app/
 
-#### Get Meta Data
+#### Get Image-Kit credentials
 
-```http
+```bash
   GET /api/v1/image-kit/auth
 ```
 
@@ -95,7 +105,7 @@ To run this project, you will need to add the following environment variables to
 
 
 
-## Deployment
+## Client Side - Deployment
 
 #### 1. Open Client-Side Folder then Install the package
 
