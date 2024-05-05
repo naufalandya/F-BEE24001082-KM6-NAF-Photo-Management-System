@@ -36,7 +36,7 @@
 #### Create Meta Data
 
 ```POST
-  GET /api/v1/image-kit/meta-data-image
+  POST /api/v1/image-kit/meta-data-image
 ```
 
 | Parameter | Type     | Description                |
