@@ -126,13 +126,13 @@ or, you can directly
 and
 
 ```bash
-  npx vite build
+  bunx vite build
 ```
 
 #### 3. Setup Wrangler
 
 ```bash
-  npm install -g wrangler
+  bun add wrangler
 ```
 
 and 
@@ -141,9 +141,29 @@ and
   wrangler login
 ```
 
-#### 4. deploy 
+#### 4. Deploy 
 
 ```bash
-  npx wrangler pages dist
+  bunx wrangler pages dist
 ```
 
+## D1-Hono Deployment
+
+#### 1. Install packages
+
+```bash
+  npm i
+```
+
+#### 2. Deploy to cloudflare
+
+```bash
+  npm run deploy
+```
+
+
+## Railway-Hono Deployment
+
+#### 1. Clone this repo to your github
+
+#### 2. Open Railway, Connect Your Github and Deploy the repo
